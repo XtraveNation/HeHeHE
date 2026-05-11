@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  rick-o:
+    build: .
+    ports:
+      - '9000:9000'
+    volumes:
+      - ricko-data:/data
+    restart: unless-stopped
+    environment:
+      - RICKO_PORT=9000
+
+volumes:
+  ricko-data:
