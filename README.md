@@ -1,24 +1,26 @@
-# Rick-o - Self-hosted AI Coding Agent
+# Rick-o - Self-hosted AI Coding Agent (Rick & Morty Edition)
 
-**A practical self-hosted alternative to exe.dev's Shelley, renamed 'Rick-o'.**
+**Get Schwifty with your own local exe.dev / Shelley alternative!**
 
-## What it does
-- Web-based multi-model coding agent with shell/tools
-- Supports OpenAI, Anthropic, Grok, Ollama, etc.
-- Docker for instant run
-- Admin UI for keys & providers
-- Lightweight 'instances' via Docker
+## Quick Start
 
-## Quick Deploy
 ```bash
 git clone https://github.com/XtraveNation/HeHeHE.git rick-o
 cd rick-o
+cp .env.example .env
+# Edit .env with your real API keys
+
 docker compose up --build -d
 ```
 
-UI: http://localhost:9000
-Admin: http://localhost:9001
+- **UI**: http://localhost:9000
+- **Admin**: http://localhost:9000/admin
 
-See `DEPLOY.md` for details.
+## Features
+- Full Shelley functionality forked & renamed to Rick-o
+- Chaotic Rick Sanchez personality
+- Multi-provider support (OpenAI, Anthropic, Grok, Groq, Ollama...)
+- Docker instant deploy
+- Admin panel for keys & models
 
-**Note**: This is a starter. For full Shelley code, clone https://github.com/boldsoftware/shelley and apply renames (s/Shelley/Rick-o/g, update ports/config). Extend with your needs.
+See `DEPLOY.md` for full instructions.
